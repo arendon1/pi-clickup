@@ -1,0 +1,22 @@
+{
+  "name": "pi-clickup",
+  "version": "0.1.0",
+  "description": "Full-surface ClickUp API as native pi tools (v2 + v3)",
+  "type": "module",
+  "keywords": ["pi-package", "clickup", "clickup-api", "pi-extension"],
+  "license": "MIT",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "smoke": "node --experimental-strip-types scripts/smoke.ts"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-agent-core": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  }
+}
